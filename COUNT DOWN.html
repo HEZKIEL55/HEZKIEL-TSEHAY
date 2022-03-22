@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-image: url('12.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+        
+        
+        
+
+<h1>
+    <header style="color: rgb(14, 17, 14);font-family: 'Times New Roman'; font-size: 100px; text-align: center;">NATURE BLOGS</header>
+</h1>
+<p>
+    <main style="color: rgb(14, 15, 14);font-family: 'Times New Roman'; font-size: 50px; text-align: center;">VLOGS</video></main>
+</p>
+
+
+
+<footer style="color: rgb(17, 15, 15);font-family: 'Times New Roman'; font-size: 50px; text-align: center;">STARTS IN</footer>
+</html><!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+<style>
+    body
+    {
+color: rgb(188, 188, 235);
+text-align: center;
+font-family:fantasy;
+font-size: 100px;
+    }
+</style>
+<script>
+
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+
+var x = setInterval(function() {
+
+  
+  var now = new Date().getTime();
+
+  
+  var distance = countDownDate - now;
+
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
